@@ -1,0 +1,129 @@
+$date
+	Fri Nov 08 11:38:54 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module PC_tb $end
+$var wire 1 ! clock $end
+$var wire 5 " PC [4:0] $end
+$var reg 5 # J_TypeImmediate [4:0] $end
+$var reg 2 $ Reset [1:0] $end
+$var reg 2 % sig_pc_src [1:0] $end
+$scope module clock_generator $end
+$var reg 1 ! clock $end
+$upscope $end
+$scope module pcModule $end
+$var wire 5 & J_TypeImmediate [4:0] $end
+$var wire 2 ' Reset [1:0] $end
+$var wire 1 ! clock $end
+$var wire 5 ( jump_target_address [4:0] $end
+$var wire 2 ) sig_pc_src [1:0] $end
+$var wire 5 * pc_plus_2 [4:0] $end
+$var wire 5 + pc_plus_1 [4:0] $end
+$var reg 5 , PC [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ,
+b1 +
+b10 *
+b1 )
+bx (
+b0 '
+bx &
+b1 %
+b0 $
+bx #
+b0 "
+0!
+$end
+#5
+b10 +
+b11 *
+b1 "
+b1 ,
+1!
+#10
+b1010 (
+b1010 #
+b1010 &
+b11 %
+b11 )
+0!
+#15
+b1011 +
+b1100 *
+b1010 "
+b1010 ,
+1!
+#20
+b10100 (
+b10100 #
+b10100 &
+b10 %
+b10 )
+0!
+#25
+b1101 +
+b1110 *
+b1100 "
+b1100 ,
+1!
+#30
+b1 %
+b1 )
+0!
+b1 $
+b1 '
+#35
+b1 +
+b10 *
+b0 "
+b0 ,
+1!
+#40
+0!
+b0 $
+b0 '
+#45
+b10 +
+b11 *
+b1 "
+b1 ,
+1!
+#50
+b10 %
+b10 )
+0!
+#55
+b100 +
+b101 *
+b11 "
+b11 ,
+1!
+#60
+b1 %
+b1 )
+0!
+#65
+b101 +
+b110 *
+b100 "
+b100 ,
+1!
+#70
+0!
+#75
+b110 +
+b111 *
+b101 "
+b101 ,
+1!
+#80
+0!
